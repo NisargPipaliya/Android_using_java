@@ -44,17 +44,22 @@ delete(String table, String whereClause, String[] whereArgs)
 - `compileStatement(String sql)`: Compiles an SQL statement into a reusable pre-compiled statement object.
 - `delete(String table, String whereClause, String[] whereArgs)`: Convenience method for deleting rows in the database.
 - `deleteDatabase(File file)`: Deletes a database including its journal file and other auxiliary files that may have been created by the database engine.
+- `execSQL(String sql)`: Execute a single SQL statement that is NOT a SELECT or any other SQL statement that returns data.
+- `isOpen()`: Returns true if the database is currently open.
+- `isReadOnly()`: Returns true if the database is opened as read only.
+- `openOrCreateDatabase(File file, SQLiteDatabase.CursorFactory factory)` : Equivalent to openDatabase(file.getPath(), factory, CREATE_IF_NECESSARY).
+- `query(String table, String[] columns, String selection, String[] selectionArgs, String groupBy, String having, String orderBy, String limit)`: Query the given table, returning a Cursor over the result set.
+- `rawQuery(String sql, String[] selectionArgs)`: Runs the provided SQL and returns a Cursor over the result set.
+- `update(String table, ContentValues values, String whereClause, String[] whereArgs)` : Convenience method for updating rows in the database.
 - 
 
-## SQLiteOpenHelper
+# SQLiteOpenHelper
 ## SQLiteOpenHelper Methods:
-
 
 ```java
 SQLiteOpenHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version)
 // Constructor to create a new instance of `SQLiteOpenHelper`. It requires the context, database name, optional `CursorFactory`, and the initial database version.
 ```
-
 ```java
 onCreate(SQLiteDatabase db)
 //Called when the database is created for the first time. You should create your database tables and initial data in this method.
@@ -62,7 +67,7 @@ onCreate(SQLiteDatabase db)
 
 ```java
 onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
-Called when the database needs to be upgraded due to a version change. You should handle any necessary data migration or schema changes in this method.
+//Called when the database needs to be upgraded due to a version change. You should handle any necessary data migration or schema changes in this method.
 ```
     
 ```java
@@ -70,23 +75,29 @@ getWritableDatabase()
 //Returns a writable database instance. If the database does not exist, `onCreate` will be called. If the database needs to be upgraded, onUpgrade will be called.
 ```
 
-
 ```java 
 getReadableDatabase()
-
 //Returns a readable database instance. If the database does not exist, `onCreate` will be called. If the database needs to be upgraded, onUpgrade will be called.
 ```
 
-
 ```java
 onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion)
-
 //Called when the database needs to be downgraded due to a version change. You should handle any necessary data migration or schema changes in this method.
 ```
 
 ```java
 close()
 //Closes the database. You should call this method when you are done using the database to free up resources.
+```
+
+```java
+getDatabaseName()
+//Return the name of the SQLite database being opened, as given to the constructor.
+```
+
+```java 
+onOpen(SQLiteDatabase db)
+//Called when the database has been opened.
 ```
 
 **Demo Program**
