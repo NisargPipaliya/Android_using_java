@@ -1,5 +1,5 @@
 # Basics of Animation
-
+## Create a folder named 
 ### Zoom In 
 ##### XML
 ```xml
@@ -30,4 +30,11 @@
     android:PivotY="50%"
 />
 </set>
+```
+
+### Java for above animation
+```Java
+image = (ImageView) findViewById(R.id.image_id);
+Animation ani = AnimationUtils.LoadAnimation(getApplicationContext(),R.anim.file_name);
+image.startAnimation(ani);
 ```
