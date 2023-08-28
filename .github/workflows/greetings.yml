@@ -12,5 +12,5 @@ jobs:
     - uses: actions/first-interaction@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: "Hey There, the issue will be taken care shortly' first issue"
-        pr-message: "Hey There 👋, Just Hang in there untli maintainer reviews your PR.' first pull request"
+        issue-message: "Hey There, the issue will be taken care shortly"
+        pr-message: "Hey There 👋, Just Hang in there untli maintainer reviews your PR"
