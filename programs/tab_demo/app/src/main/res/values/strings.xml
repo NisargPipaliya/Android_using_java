@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TabDemo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">This is Chat Section</string>
+    <string name="statusSection">This is Status Section</string>
+    <string name="profileSection">This is Profile Section</string>
+</resources>
