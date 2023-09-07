@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+               mp.reset();
                pickMusic();
             }
         });
