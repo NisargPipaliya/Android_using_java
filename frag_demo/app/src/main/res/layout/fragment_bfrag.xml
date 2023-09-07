@@ -9,6 +9,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/bfrag1"
+        android:background="@color/cardview_shadow_start_color"
         android:text="@string/hello_blank_fragment" />
 
 </FrameLayout>
