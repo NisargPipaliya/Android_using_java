@@ -1,5 +1,5 @@
 # Basics of Animation
-## Create a folder named 
+## Create a folder named anim
 ### Zoom In 
 ##### XML
 ```xml
