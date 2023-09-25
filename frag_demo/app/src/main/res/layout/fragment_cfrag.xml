@@ -3,13 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/material_dynamic_tertiary50"
     tools:context=".Cfrag">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hcfrag"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:fontFamily="cursive"
         android:id="@+id/cfrag1"
         android:background="@color/design_default_color_primary_variant"
         />

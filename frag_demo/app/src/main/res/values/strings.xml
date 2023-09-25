@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">frag_demo</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hafrag">Hello this is fragment A</string>
+    <string name="hbfrag">Hello this is fragment B</string>
+    <string name="hcfrag">Hello this is fragment C</string>
+
 </resources>

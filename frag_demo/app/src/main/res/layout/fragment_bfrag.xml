@@ -3,14 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/material_dynamic_tertiary0"
     tools:context=".Bfrag">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/bfrag1"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:fontFamily="cursive"
         android:background="@color/cardview_shadow_start_color"
-        android:text="@string/hello_blank_fragment" />
+        android:text="@string/hbfrag" />
 
 </FrameLayout>

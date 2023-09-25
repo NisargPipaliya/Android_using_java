@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtV"
+        android:textSize="70sp"
+        android:text="Enter Time to Sleep"
+        android:fontFamily="cursive"
+        />
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/edttim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Time"
+        android:textSize="40sp"
+        android:ems="60"
+        android:fontFamily="cursive"
+        android:layout_below="@+id/txtV"
+        />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edttim"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:fontFamily="cursive"
+        android:text="Sleep"
+        android:textSize="30sp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNxt"
+        android:layout_below="@+id/btn"
+        android:layout_centerHorizontal="true"
+        android:text="Next Page"
+        android:textSize="30sp"
+        android:fontFamily="cursive"
+        android:layout_marginTop="20dp"
+        />
+</RelativeLayout>
